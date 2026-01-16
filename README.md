@@ -1,1 +1,1 @@
-# EcoGear-Ecommerce-Website
+# EcoGear Ecommerce-Website
