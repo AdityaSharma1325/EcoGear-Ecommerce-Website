@@ -1,0 +1,414 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*body styling*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/*header and nav bar*/
+header{
+    width:100%;
+    background-color: #ffffff;
+    border-bottom:1px solid #eaeaea
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding: 1rem 2rem;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #2f855a;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap:1.5rem;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:#333;
+    font-size:1rem;
+    transition:color 0.3s ease;
+}
+
+.nav-links:hover{
+    color:#2f855a
+}
+
+@media (max-width: 768px){
+    .nav-links{
+        display: none;
+    }
+}
+
+.hero{
+    height:90vh;
+    background-image: url(images/hiking-2000-x-1200-background-1p07na3x438m8ex8.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    max-width:600px;
+    padding:1rem;
+}
+
+.hero h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size:1.2rem;
+    color:#f0f0f0 ;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding:0.8rem 2rem;
+    color:#fff;
+    border-radius:30px;
+    background-color: #2f855a;
+    font-size:1rem;
+     
+}
+
+@media (max-width:768px){
+    .hero h1{
+        font-size: 2.2rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+}
+
+.products{
+    padding:10px;
+    background-color: #f9f9f9;
+}
+
+.container{
+    max-width: 1200px;
+    margin:auto;
+}
+
+.section-title{
+    font-size:2rem;
+    text-align: center;
+    color:#2f855a;
+    margin-bottom:3rem;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+
+.product-card{
+    background-color: white;
+    text-align:center;
+    padding:1.5rem;
+    border-radius:10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+}
+
+.product-card img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius:8px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3{
+    font-size:1.2rem;
+    margin-bottom:0.5rem;
+}
+
+.price{
+    font-weight: bold;
+    color:#2f855a;
+    font-size:1.3rem;
+    margin-bottom:0.5rem;
+}
+@media (max-width:992px){
+    .product-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 600px){
+    .product-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+.information{
+    padding: 4rem 2rem;
+    background-color: white;
+}
+
+.info-wrapper{
+    display:flex;
+    align-items: center;
+    gap:3rem;
+}
+
+.ecogear-image{
+    flex:1;
+}
+
+.ecogear-image img{
+    width:100%;
+    border-radius:12px;
+}
+
+.about-ecogear{
+    flex:1;
+}
+
+.heading-idea{
+    font-size:2rem;
+    color:#2f855a;
+    margin:1rem;
+}
+
+.paragraph-idea{
+    font-size:1.2rem;
+    color:#555;
+    line-height:1.6;
+    margin-bottom:1.5rem;
+}
+
+.bullet-points li{
+    margin-bottom:0.6rem;
+    padding-left:1.5rem;
+    position:relative;
+}
+
+@media (max-width: 768px){
+    .info-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .bullet-points li{
+        padding-left:0;
+    }
+    .bullet-points li::before{
+        display:none;
+    }
+}
+
+.testimonals{
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.testimonal-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+}
+
+.testimonal-card{
+    background-color: #ffffff;
+    padding:2rem;
+    border-radius: 12px;
+    text-align:center;
+}
+
+.testimonal-card img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    object-fit:cover;
+    display: block;
+    margin:0 auto 1rem;
+    border:2px solid #ddd;
+}
+
+.testimonal-card p{
+    font-size:0.95rem;
+    line-height:1.6rem;
+    text-align:center;
+    color:#555;
+}
+
+.testimonal-card h4{
+    font-size:1.1rem;
+    font-weight:600;
+    text-align:center;
+    margin-top: 0.5rem;
+    color: #111827;
+}
+
+@media (max-width:992px){
+    .testimonal-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .testimonal-grid{
+       grid-template-columns: 1fr;
+    }
+}
+
+.contact{
+    padding:4rem 2rem;
+    background-color: white;
+}
+
+.contact-into{
+    text-align:center;
+    font-size: 1rem;
+    margin-bottom: 0 auto 3rem;
+    color:#555;
+    max-width:600px;
+    line-height:1.6;
+}
+
+.contact-wrapper{
+    display:flex;
+    gap:3rem;
+    align-items: center;
+}
+
+.contact-info{
+    flex:1;
+    text-align: center;
+}
+
+.contact-info img{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:2rem;
+
+}
+
+
+.contact-form{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:0.8rem 1rem;
+    font-size:1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius:8px;
+}
+
+.contact-form input:focus,
+.contact-form textarea{
+    background-color: white;
+}
+
+@media (max-width:768px){
+    .contact-wrapper{
+        flex-direction: column;
+    }
+
+    .contact-info{
+        text-align:center;
+    }
+}
+
+.footer{
+    padding: 3rem 3rem 1rem;
+    background-color: #1f2933;
+    color:white;
+}
+
+.footer-wrapper{
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.footer-brand h3{
+    color:#2f855a;
+    margin-bottom: 0.2rem;
+}
+
+.footer-brand p{
+    font-size: 0.9rem;
+    color:#ccc;
+    max-width:300px;
+}
+
+.footer-links h4{
+    margin-bottom: 0.8rem;
+}
+
+.footer-links ul{
+    list-style: none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom: 1px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color:#ccc;
+    font-size:0.9rem;
+}
+
+.footer-links a:hover{
+    color:#2f855a;
+}
+
+.footer-bottom{
+    text-align:center;
+    color:#aaa;
+    font-size:0.85rem;
+    margin-top:2rem;
+    border-top:1px solid #444;
+    padding-top:1rem;
+}
+
+@media (max-width:768px){
+    .footer-wrapper{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .footer-brand p{
+        margin: auto;
+    }
+}
+
+
+
